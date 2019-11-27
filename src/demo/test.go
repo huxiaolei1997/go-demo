@@ -1,4 +1,4 @@
-package main
+package demo
 
 import "fmt"
 
@@ -32,7 +32,7 @@ type NewInt int
 // 将int取一个别名叫IntAlias
 type IntAlias = int
 
-func main() {
+func test3() {
 	fmt.Println("Hello, World!")
 
 	// 声明一个局部变量

@@ -1,4 +1,4 @@
-package main
+package demo
 
 import (
 	"fmt"
@@ -28,7 +28,7 @@ func customer(channel <-chan string) {
 	}
 }
 
-func main() {
+func test4() {
 	// 创建一个字符串类型的通道
 	channel := make(chan string)
 	// 创建producer()函数的并发goroutine

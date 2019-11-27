@@ -1,8 +1,16 @@
-package main
+package demo
 
 import "fmt"
 
-func main() {
+/**
+此函数会在包被导入时执行，例如如果是在main中导入包，包中存在init()方法，那么init()中的代码会在main()函数执行前执行，用于
+初始化包所需要的特定资料。
+*/
+func init() {
+	fmt.Println("pointer.go demo init")
+}
+
+func Main() {
 	var a int = 1
 	b := 2
 	fmt.Printf("%p %p %d\n", &a, &b, *&a)
@@ -32,4 +40,5 @@ func main() {
 	str := new(string)
 	*str = "Go语言教程"
 	fmt.Println(*str)
+
 }

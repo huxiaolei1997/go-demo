@@ -1,4 +1,4 @@
-package main
+package demo
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func test() {
 	// 准备从标准输入读取数据。
 	inputReader := bufio.NewReader(os.Stdin)
 	fmt.Println("Please input your name:")
