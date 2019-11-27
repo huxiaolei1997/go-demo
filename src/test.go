@@ -87,6 +87,9 @@ func main() {
 	var w2 IntAlias
 	// 查看a2的类型名
 	fmt.Printf("a2 type: %T\n", w2)
+
+	// 当然Go语言中的变量、函数、常量名称的首字母也可以大写，
+	// 如果首字母大写，则表示它可以被其它的包访问（类似于 Java 中的 public）；如果首字母小写，则表示它只能在本包中使用 (类似于 Java 中 private）
 }
 
 /**
